@@ -1,38 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 .App {
+  max-width: 1360px;
+  margin: auto;
+  padding: 20px;
+}
+
+.color {
+  background-color: #F9F8FB;
+  height: 292px;
+}
+
+.one {
+  background-color: #F9F8FB;
+  padding: 57px;
+}
+
+.pt6{
+  padding-top: 55px;
+}
+
+.animation {
+  position: absolute;
+  width: 100%;
+  background: white;
+  z-index: 175;
+  top: 6px;
+  height: 100vh;
+}
+
+.responsive {
+  height: 90vh;
+  padding-left: 25px;
+  color: #000000;
+}
+
+.join {
+  margin-top: 25vh;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+  background: #645CFF !important;
+  border-radius: 5px !important;
+  border: 1px solid #645CFF !important;
+  font-size: 15px !important;
+  width: 130px !important;
+  height: 40px;
+}
+
+.btn-primary:hover {
+  background: #4d48a5 !important;
+  border-radius: 5px !important;
+  border: 1px solid #4d48a5 !important;
+  font-size: 15px !important;
+  color: white !important;
+  width: 130px !important;
+  height: 40px;
+}
+
+.btn-info:hover {
+  background: #4d48a5 !important;
+  border-radius: 5px !important;
+  border: 1px solid #4d48a5 !important;
+  font-size: 13px !important;
+  color: white !important;
+  line-height: 15px !important;
+  padding: 12px !important;
+  width: 170px !important;
+}
+
+.btn-info,
+.btn-info:active,
+.btn-info:visited {
+  background: #645CFF !important;
+  border-radius: 5px !important;
+  border: 1px solid #645CFF !important;
+  font-size: 13px !important;
+  color: white !important;
+  line-height: 15px !important;
+  padding: 12px !important;
+  width: 170px !important;
+}
+
+.btn-dark:hover {
+  background: #4d48a5 !important;
+  border-radius: 5px !important;
+  border: 1px solid #4d48a5 !important;
+  font-size: 13px !important;
+  color: white !important;
+  line-height: 15px !important;
+  padding: 12px !important;
+  width: 170px !important;
+}
+
+.btn-danger:hover {
+  background: #4d48a5 !important;
+  border-radius: 5px !important;
+  border: 1px solid #4d48a5 !important;
+  font-size: 13px !important;
+  color: white !important;
+  line-height: 15px !important;
+  padding: 12px !important;
+}
+
+.btn-danger,
+.btn-danger:active,
+.btn-danger:visited {
+  background: #645CFF !important;
+  border-radius: 5px !important;
+  border: 1px solid #645CFF !important;
+  font-size: 13px !important;
+  color: white !important;
+  line-height: 15px !important;
+  padding: 12px !important;
+}
+
+.btn-dark,
+.btn-dark:active,
+.btn-dark:visited {
+  background: #ffffff !important;
+  border-radius: 5px !important;
+  border: 1px solid #645CFF !important;
+  font-size: 13px !important;
+  color: #645CFF !important;
+  line-height: 15px !important;
+  padding: 12px !important;
+  width: 170px !important;
+}
+
+.navbarmainRes {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.navbarmain {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #645CFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button {
+  margin-left: 8px;
+  width: 150px;
+}
+
+.button:hover {
+  width: 150px;
+}
+
+
+.navbarname {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #727171;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.p-class {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #727171;
+}
+
+.head {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 81px;
+  color: #000000;
+  padding: 0px !important;
+}
+
+.w100 {
+  width: 50% !important;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.h1 {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 40px !important;
+  line-height: 50px !important;
+  color: #000000;
+  padding: 0px !important;
+}
+
+.h2 {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 25px;
   text-align: center;
+  line-height: 25px;
+  color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h3 {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 25px;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 12px;
+  line-height: 16px;
+  color: #727171;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.span {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.2857px;
+  line-height: 23px;
+  text-align: start !important;
+  color: #463DFF;
+  text-decoration: none;
+
+}
+
+.span:hover {
+  color: #4d48a5;
+}
+
+.mt5 {
+  margin-top: 7rem !important;
+}
+
+.mt6 {
+  margin-top: 5rem !important;
+}
+
+.box {
+  width: 350.29px;
+  height: 330px !important;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4.57143px rgba(0, 0, 0, 0.15);
+  border-radius: 9.14286px;
+  transition: transform .2s;
+  padding-bottom: 15px;
+}
+
+.box-one {
+  width: 350.29px;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4.57143px rgba(0, 0, 0, 0.15);
+  border-radius: 9.14286px;
+}
+
+.dashboard {
+  height: 790px;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box-1 {
+  margin-top: -9px !important;
+  height: 350px !important;
+}
+
+.inner-box {
+  margin: 20px;
+}
+
+.pt5 {
+  padding-top: 142px;
+}
+
+.start{
+  z-index: 150;
+  padding-top: 6rem;
+}
+
+.p-text {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 15px;
+  padding-top: 5px;
+  text-align: center;
+  line-height: 16px;
+  color: #727171;
+}
+
+.form {
+  position: relative;
+  z-index: 150;
+  width: 400px;
+  height: auto;
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 24px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+}
+
+.icon {
+  margin-top: 314px;
+}
+
+.position {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.deco {
+  position: relative;
+  left: 51px;
+  top: -52px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.deco-respnosive {
+  position: relative;
+  left: 43px;
+  top: -52px;
+}
+
+.deco1 {
+  position: relative;
+  top: 146px;
+  left: -54px;
+}
+
+.deco1-responsive {
+  position: relative;
+  top: 146px;
+  left: -32px;
+}
+
+
+.bg {
+  background-color: #645CFF;
+  height: 250px;
+  padding: 0 !important;
+}
+
+.email-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.email-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  position: absolute;
+  left: 304px;
+  color: #645CFF;
+}
+
+.h6 {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px !important;
+  line-height: 20px;
+  color: #FFB106;
+}
+
+
+input::placeholder {
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #727171;
+}
+
+.email-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #FFFFFF;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+/* RESPONSIVE-QUERY */
+@media screen and (max-width: 992px) {
+  .App {
+    padding: 1px;
   }
-  to {
-    transform: rotate(360deg);
+  .start{
+    z-index: 150;
+    padding-top: 3rem !important;
+  }
+  
+
+  .dashboard {
+    height: 360px !important;
+  }
+
+  .color {
+    background-color: #F9F8FB;
+    height: 280px !important;
+  }
+
+
+  .one {
+    background-color: #F9F8FB;
+    padding-top: 30px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 30px !important;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .w50 {
+    width: 52% !important;
+  }
+
+  .box-1 {
+    margin-top: 1.5rem !important;
+    height: 330px !important;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 680px) {
+  .form {
+    z-index: 150;
+    width: 372px;
+    height: auto;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 24px 4px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    position: absolute;
+    margin-left: 23px;
+  }
+
+  .email-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    position: absolute;
+    left: 279px !important;
+    color: #645CFF;
+  }
+
+  .deco-respnosive {
+    position: relative;
+    left: -151px !important;
+    top: -52px !important;
+  }
+
+
+  .deco1-responsive {
+    position: relative;
+    top: 111px !important;
+    left: 104px !important;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 459px) {
+  .form {
+    z-index: 150;
+    width: 309px;
+    height: auto;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 24px 4px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    position: absolute;
+  }
+
+  .email-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    position: absolute;
+    left: 207px !important;
+    color: #645CFF;
+  }
+
+  .deco-respnosive {
+    position: relative;
+    left: -64px !important;
+    top: -52px !important;
+  }
+
+
+  .deco1-responsive {
+    position: relative;
+    top: 156px !important;
+    left: 65px !important;
+  }
+
+  .position {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 90px !important;
+    margin-bottom: 250px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 992px) {
+  .head {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    padding: 0px !important;
+  }
+
+  .w100 {
+    width: 100% !important;
+  }
+}
+
+
+@media screen and (min-width: 340px) and (max-width: 389px) {
+  .form {
+    z-index: 150;
+    width: 300px;
+    height: auto;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 24px 4px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    margin-left: 10px;
+    position: absolute;
+  }
+
+  .email-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    position: absolute;
+    left: 210px !important;
+    color: #645CFF;
+  }
+
+  .deco-respnosive {
+    position: relative;
+    left: -64px !important;
+    top: -52px !important;
+  }
+
+
+  .deco1-responsive {
+    position: relative;
+    top: 111px !important;
+    left: 60px !important;
+  }
+
+  .position {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 90px !important;
+    margin-bottom: 250px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 573px) {
+  .mobile-part {
+    position: absolute !important;
+    margin-top: 127px;
+  }
+
+  .start{
+    z-index: 150;
+    padding-top: 3rem !important;
+  }
+  .dashboard {
+    height: 450px !important;
+  }
+
+  .w50 {
+    width: 62% !important;
+  }
+
+  .color {
+    background-color: #F9F8FB;
+    height: 293px !important;
+  }
+
+  .mt5 {
+    margin-top: 3.5rem !important;
+  }
+
+  .navbarname {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #727171;
+    cursor: pointer;
+    text-decoration: none !important;
+    padding: 15px;
+  }
+
+
+  .head {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000000;
+    padding: 0px !important;
+  }
+
+  .w100 {
+    width: 100% !important;
+  }
+
+  .span2 {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.2857px;
+    line-height: 23px;
+    text-align: start !important;
+    color: #463DFF;
+    margin-top: -28px;
+  }
+
+  .h1 {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    line-height: 40px !important;
+    color: #000000;
+    padding: 0px !important;
+  }
+
+  .p-class {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #727171;
+    padding: 15px;
   }
 }

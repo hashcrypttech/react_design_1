@@ -1,0 +1,186 @@
+.notes {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
+
+.h1 {
+    text-align: center;
+}
+
+.boxPart {
+    height: auto;
+    background-color: white;
+    width: 100%;
+    -moz-box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 15px #999;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.buttonPart {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.editButton {
+    background: black;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.deleteButton {
+    background: red;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.table {
+    border: 1px solid silver;
+    display: flex;
+    justify-content: center;
+}
+
+.th {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.tr {
+    border-bottom: 5px solid red;
+}
+
+.td {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.search {
+    border: 1px solid silver;
+    margin-bottom: 20px;
+    width: 89%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.serachField {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.pText{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 26px !important;
+    font-weight: 700;
+}
+
+.addNew{
+    background: black;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 450px) {
+    .notes {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;
+        padding: 8px;
+    }
+
+    .search {
+        border: 1px solid silver;
+        margin-bottom: 20px;
+        width: 65%;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .addNew{
+        background: black;
+        padding: 15px;
+        width: 100%;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .table {
+        border: 1px solid silver;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .th {
+        font-size: 15px;
+        font-weight: 700;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .tr {
+        border-bottom: 5px solid red;
+    }
+    
+    .td {
+        padding-left: 0;
+        padding-right: 1px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .editButton {
+        background: black;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .deleteButton {
+        background: red;
+        padding: 10px;
+        width: 80%;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
